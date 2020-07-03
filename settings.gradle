@@ -1,3 +1,4 @@
 rootProject.name = 'testemonico'
 
 include ':domain'
+include ':usecase'
