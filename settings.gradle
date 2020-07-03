@@ -1,0 +1,3 @@
+rootProject.name = 'testemonico'
+
+include ':domain'
