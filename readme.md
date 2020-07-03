@@ -5,7 +5,7 @@
 
 Para rodar localmente:
 
-`mvn spring-boot:run`
+`mvn spring-boot:run` (sem docker, já sobe uma instância embarcada do Mongo)
 
 
 ## Escolha das ferramentas
@@ -14,6 +14,7 @@ Para rodar localmente:
 
 - Gestor de dependências: Maven, por ter maior familiaridade do que com Gradle. Embora ache o segundo mais fácil (e mais legível).
 
+- Persistência: Por questões de familiaridade vou usar o MongoDB. E para facilitar o deploy vou usar uma versão embarcada.
 
 ## Projeto
 
