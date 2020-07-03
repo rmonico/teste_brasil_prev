@@ -4,6 +4,9 @@ include ':domain'
 include ':usecase'
 include ':idgenerator.uuid'
 include ':repository.in_memory'
+include ':application.spring'
 
 project(':idgenerator.uuid').projectDir = file('adapter/idgenerator/uuid')
 project(':repository.in_memory').projectDir = file('adapter/repository/in_memory')
+
+project(':application.spring').projectDir = file('application/spring')
