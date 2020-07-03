@@ -2,6 +2,6 @@ rootProject.name = 'testemonico'
 
 include ':domain'
 include ':usecase'
-include ':uuid'
+include ':idgenerator.uuid'
 
-project(':uuid').projectDir = file('adapter/idgenerator/uuid')
+project(':idgenerator.uuid').projectDir = file('adapter/idgenerator/uuid')
