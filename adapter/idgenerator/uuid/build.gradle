@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'testemonico.uuid'
+
+dependencies {
+    implementation(
+        project(':usecase')
+    )
+}
