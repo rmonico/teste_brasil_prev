@@ -1,4 +1,6 @@
 package testemonico.usecase.port;
 
-public interface OrderItemRepository extends BaseRepository<OrderItemRepository, String> {
+import testemonico.domain.entity.OrderItem;
+
+public interface OrderItemRepository extends BaseRepository<OrderItem, String> {
 }
