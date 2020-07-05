@@ -5,19 +5,33 @@
 
 Entregar todos os endpoints com Clean Archicteture
 
-- [x] Produto Create
-- [ ] Cliente Create
-- [ ] Pedido Create
-- [ ] Cliente Update
-- [ ] Cliente Delete
-- [ ] Cliente FindAll
-- [ ] Produto Update
-- [ ] Produto Delete
-- [ ] Produto FindAll
-- [ ] Pedido Cancel
-- [ ] Pedido FindAll
-- [ ] Pedido FindByProduct
-- [ ] Pedido FindByCustomer
+- [x] CreateProduct
+- [ ] UpdateProduct
+- [ ] DeleteProduct
+- [ ] FindAllProducts
+
+- [ ] CreateCustomer
+- [ ] UpdateCustomer
+- [ ] DeleteCustomer
+- [ ] FindAllCustomers
+
+- [ ] CreateOrder
+- [ ] UpdateOrder
+- [ ] DeleteOrder
+- [ ] FindAllOrders
+
+
+- [ ] ProductRepository
+- [ ] CustomerRepository
+- [ ] OrderRepository
+
+- [ ] ProductController
+- [ ] CustomerController
+- [ ] OrderController
+
+- [ ] ProductSpringController
+- [ ] CustomerSpringController
+- [ ] OrderSpringController
 
 
 ## Milestone 2
