@@ -20,14 +20,23 @@ Entregar todos os endpoints com Clean Archicteture
 - [ ] DeleteOrder
 - [ ] FindAllOrders
 
+- [ ] CreateOrderItem
+- [ ] UpdateOrderItem
+- [ ] DeleteOrderItem
+- [ ] FindAllOrderItems
 
-- [ ] ProductRepository
-- [ ] CustomerRepository
-- [ ] OrderRepository
+
+- [x] ProductRepository
+- [x] CustomerRepository
+- [x] OrderRepository
+- [x] OrderItemRepository
 
 - [ ] ProductController
 - [ ] CustomerController
 - [ ] OrderController
+
+- [ ] Config
+- [ ] SpringConfig
 
 - [ ] ProductSpringController
 - [ ] CustomerSpringController
