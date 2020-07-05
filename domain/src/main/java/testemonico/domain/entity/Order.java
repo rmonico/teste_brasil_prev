@@ -6,9 +6,8 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Data
-public class Order implements BaseEntity {
+public class Order extends Entity<String> {
 
-    private String id;
     private Customer customer;
     private List<OrderItem> items;
     private BigDecimal totalPrice;

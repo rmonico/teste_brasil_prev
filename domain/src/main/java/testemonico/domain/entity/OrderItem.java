@@ -5,9 +5,8 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-public class OrderItem implements BaseEntity {
+public class OrderItem extends Entity<String>  {
 
-    private String id;
     private Product product;
     private BigDecimal quantity;
 }
