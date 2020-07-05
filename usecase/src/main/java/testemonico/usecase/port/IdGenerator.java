@@ -1,5 +1,5 @@
 package testemonico.usecase.port;
 
-public interface IdGenerator {
-    String generate();
+public interface IdGenerator<I> {
+    I generate();
 }
