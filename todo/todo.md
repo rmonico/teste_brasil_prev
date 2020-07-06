@@ -28,16 +28,16 @@ Entregar todos os endpoints com Clean Archicteture
 - [x] OrderRepository
 - [x] OrderItemRepository
 
-- [ ] ProductController
-- [ ] CustomerController
-- [ ] OrderController
+- [x] ProductController
+- [x] CustomerController
+- [x] OrderController
 
-- [ ] Config
-- [ ] SpringConfig
+- [x] Config
+- [x] SpringConfig
 
-- [ ] ProductSpringController
-- [ ] CustomerSpringController
-- [ ] OrderSpringController
+- [x] ProductSpringController
+- [x] CustomerSpringController
+- [x] OrderSpringController
 
 
 ## Milestone 2
