@@ -6,4 +6,5 @@ module testemonico.controller {
     exports testemonico.controller.product;
     exports testemonico.controller.product.model;
     exports testemonico.controller.customer;
+    exports testemonico.controller.order;
 }

@@ -1,10 +1,13 @@
 package testemonico.config;
 
 import testemonico.repository.InMemoryCustomerRepository;
+import testemonico.repository.InMemoryOrderRepository;
 import testemonico.repository.InMemoryProductRepository;
 import testemonico.usecase.customer.crud.*;
+import testemonico.usecase.order.crud.*;
 import testemonico.usecase.port.CustomerRepository;
 import testemonico.usecase.port.IdGenerator;
+import testemonico.usecase.port.OrderRepository;
 import testemonico.usecase.port.ProductRepository;
 import testemonico.usecase.product.crud.*;
 import testemonico.uuid.UuidGenerator;
@@ -12,6 +15,7 @@ import testemonico.uuid.UuidGenerator;
 public class SpringConfig {
     private final ProductRepository productRepository = new InMemoryProductRepository();
     private final CustomerRepository customerRepository = new InMemoryCustomerRepository();
+    private final OrderRepository orderRepository = new InMemoryOrderRepository();
     private final IdGenerator<String> idGenerator = new UuidGenerator<String>();
 
     public CreateProduct createProduct() {
@@ -52,5 +56,25 @@ public class SpringConfig {
 
     public FindCustomerById findCustomerById() {
         return new FindCustomerById(customerRepository);
+    }
+
+    public CreateOrder createOrder() {
+        return new CreateOrder(orderRepository, idGenerator);
+    }
+
+    public UpdateOrder updateOrder() {
+        return new UpdateOrder(orderRepository);
+    }
+
+    public DeleteOrder deleteOrder() {
+        return new DeleteOrder(orderRepository);
+    }
+
+    public FindAllOrders findAllOrders() {
+        return new FindAllOrders(orderRepository);
+    }
+
+    public FindOrderById findOrderById() {
+        return new FindOrderById(orderRepository);
     }
 }

@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import testemonico.config.SpringConfig;
 import testemonico.controller.customer.CustomerController;
+import testemonico.controller.order.OrderController;
 import testemonico.controller.product.ProductController;
 
 @Configuration
@@ -33,4 +34,14 @@ public class Config {
                 .build();
     }
 
+    @Bean
+    public OrderController orderController() {
+        return OrderController.builder()
+                .createOrder(config.createOrder())
+                .updateOrder(config.updateOrder())
+                .deleteOrder(config.deleteOrder())
+                .findAllOrders(config.findAllOrders())
+                .findOrderById(config.findOrderById())
+                .build();
+    }
 }
