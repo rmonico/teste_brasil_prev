@@ -1,15 +1,17 @@
 package testemonico.controller.customer;
 
-import lombok.Builder;
-import testemonico.usecase.customer.crud.*;
+import testemonico.controller.CrudController;
+import testemonico.controller.customer.model.CustomerDTO;
+import testemonico.domain.entity.Customer;
+import testemonico.usecase.base.crud.*;
 
-@Builder
-public class CustomerController {
+public class CustomerController extends CrudController<CustomerDTO, CustomerDTO, Customer, String> {
 
-    private final CreateCustomer createCustomer;
-    private final UpdateCustomer updateCustomer;
-    private final DeleteCustomer deleteCustomer;
-    private final FindAllCustomers findAllCustomers;
-    private final FindCustomerById findCustomerById;
-
+    public CustomerController(CreateEntityUseCase<Customer> createEntityUseCase,
+                              UpdateEntityUseCase<Customer> updateEntityUseCase,
+                              DeleteEntityUseCase<Customer, String> deleteEntityUseCase,
+                              FindAllEntities<Customer> findAllEntitiesUseCase,
+                              FindEntityByIdUsecase<Customer, String> findEntityByIdUseCase) {
+        super(CustomerDTO::toModel, CustomerDTO::new, createEntityUseCase, updateEntityUseCase, deleteEntityUseCase, findAllEntitiesUseCase, findEntityByIdUseCase);
+    }
 }

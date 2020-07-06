@@ -1,13 +1,17 @@
 package testemonico.controller.order;
 
-import lombok.Builder;
-import testemonico.usecase.order.crud.*;
+import testemonico.controller.CrudController;
+import testemonico.controller.order.model.OrderDTO;
+import testemonico.domain.entity.Order;
+import testemonico.usecase.base.crud.*;
 
-@Builder
-public class OrderController {
-    private final CreateOrder createOrder;
-    private final UpdateOrder updateOrder;
-    private final DeleteOrder deleteOrder;
-    private final FindAllOrders findAllOrders;
-    private final FindOrderById findOrderById;
+public class OrderController extends CrudController<OrderDTO, OrderDTO, Order, String> {
+
+    public OrderController(CreateEntityUseCase<Order> createEntityUseCase,
+                           UpdateEntityUseCase<Order> updateEntityUseCase,
+                           DeleteEntityUseCase<Order, String> deleteEntityUseCase,
+                           FindAllEntities<Order> findAllEntitiesUseCase,
+                           FindEntityByIdUsecase<Order, String> findEntityByIdUseCase) {
+        super(OrderDTO::toModel, OrderDTO::new, createEntityUseCase, updateEntityUseCase, deleteEntityUseCase, findAllEntitiesUseCase, findEntityByIdUseCase);
+    }
 }
