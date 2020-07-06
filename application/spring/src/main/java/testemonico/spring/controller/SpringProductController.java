@@ -28,7 +28,7 @@ public class SpringProductController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteProduct(@RequestBody String id) {
+    public ResponseEntity<?> deleteProduct(@PathVariable String id) {
         ProductResponse response = productController.deleteProduct(id);
 
         return ResponseEntity.ok(response);
@@ -50,7 +50,7 @@ public class SpringProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> findProductById(@RequestParam String id) {
+    public ResponseEntity<?> findProductById(@PathVariable String id) {
         ProductResponse response = productController.findProductById(id);
 
         return ResponseEntity.ok(response);
