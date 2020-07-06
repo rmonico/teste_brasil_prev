@@ -1,7 +1,8 @@
 module testemonico.usecase {
-    exports testemonico.usecase;
     exports testemonico.usecase.port;
+    exports testemonico.usecase.customer.crud;
+    exports testemonico.usecase.product.crud;
+    exports testemonico.usecase.order.crud;
 
     requires testemonico.domain;
-    requires rt;
 }
