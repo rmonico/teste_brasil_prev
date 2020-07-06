@@ -19,8 +19,8 @@ public abstract class AbstractInMemoryRepository<E extends Entity<I>, I> {
         return old;
     }
 
-    public E delete(E entity) {
-        return database.remove(entity.getId());
+    public E delete(I id) {
+        return database.remove(id);
     }
 
     public Optional<E> findById(I id) {
