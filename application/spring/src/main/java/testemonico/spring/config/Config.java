@@ -14,34 +14,28 @@ public class Config {
 
     @Bean
     public ProductController productController() {
-        return ProductController.builder()
-                .createProduct(config.createProduct())
-                .updateProduct(config.updateProduct())
-                .deleteProduct(config.deleteProduct())
-                .findAllProducts(config.findAllProducts())
-                .findProductById(config.findProductById())
-                .build();
+        return new ProductController(config.createProduct(),
+                config.updateProduct(),
+                config.deleteProduct(),
+                config.findAllProducts(),
+                config.findProductById());
     }
 
     @Bean
     public CustomerController customerController() {
-        return CustomerController.builder()
-                .createCustomer(config.createCustomer())
-                .updateCustomer(config.updateCustomer())
-                .deleteCustomer(config.deleteCustomer())
-                .findAllCustomers(config.findAllCustomers())
-                .findCustomerById(config.findCustomerById())
-                .build();
+        return new CustomerController(config.createCustomer(),
+                config.updateCustomer(),
+                config.deleteCustomer(),
+                config.findAllCustomers(),
+                config.findCustomerById());
     }
 
     @Bean
     public OrderController orderController() {
-        return OrderController.builder()
-                .createOrder(config.createOrder())
-                .updateOrder(config.updateOrder())
-                .deleteOrder(config.deleteOrder())
-                .findAllOrders(config.findAllOrders())
-                .findOrderById(config.findOrderById())
-                .build();
+        return new OrderController(config.createOrder(),
+                config.updateOrder(),
+                config.deleteOrder(),
+                config.findAllOrders(),
+                config.findOrderById());
     }
 }
