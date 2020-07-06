@@ -10,8 +10,8 @@ public abstract class AbstractDeleteEntity<E, I, R extends BaseRepository<E, I>>
         this.repository = repository;
     }
 
-    public E delete(E product) {
-        return repository.delete(product);
+    public E delete(I id) {
+        return repository.delete(id);
     }
 
 

@@ -9,7 +9,7 @@ public interface BaseRepository<E, I> {
 
     E update(E entity);
 
-    E delete(E entity);
+    E delete(I entity);
 
     Optional<E> findById(I id);
 
