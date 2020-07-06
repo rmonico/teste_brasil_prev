@@ -1,8 +1,9 @@
 package testemonico.usecase.base.crud;
 
+import testemonico.domain.entity.Entity;
 import testemonico.usecase.port.BaseRepository;
 
-public abstract class AbstractUpdateEntity<E, I, R extends BaseRepository<E, I>> {
+public abstract class AbstractUpdateEntity<E extends Entity<I>, I, R extends BaseRepository<E, I>> implements UpdateEntityUseCase<E> {
 
     private final R repository;
 

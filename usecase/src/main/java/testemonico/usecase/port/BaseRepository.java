@@ -1,9 +1,11 @@
 package testemonico.usecase.port;
 
+import testemonico.domain.entity.Entity;
+
 import java.util.List;
 import java.util.Optional;
 
-public interface BaseRepository<E, I> {
+public interface BaseRepository<E extends Entity<I>, I> {
 
     E create(E entity);
 

@@ -4,7 +4,7 @@ import testemonico.domain.entity.Entity;
 import testemonico.usecase.port.BaseRepository;
 import testemonico.usecase.port.IdGenerator;
 
-public abstract class AbstractCreateEntity<E extends Entity<I>, I, R extends BaseRepository<E, I>> {
+public abstract class AbstractCreateEntity<E extends Entity<I>, I, R extends BaseRepository<E, I>> implements CreateEntityUseCase<E> {
 
     private final R repository;
     private final IdGenerator<I> idGenerator;
