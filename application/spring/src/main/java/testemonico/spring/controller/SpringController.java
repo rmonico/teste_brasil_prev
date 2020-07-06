@@ -5,9 +5,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import testemonico.controller.ProductController;
-import testemonico.controller.model.ProductRequest;
-import testemonico.controller.model.ProductResponse;
+import testemonico.controller.product.ProductController;
+import testemonico.controller.product.model.ProductRequest;
+import testemonico.controller.product.model.ProductResponse;
 
 @RestController("/api/product/v1")
 public class SpringController {

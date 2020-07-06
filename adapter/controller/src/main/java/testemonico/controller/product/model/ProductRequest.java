@@ -1,4 +1,4 @@
-package testemonico.controller.model;
+package testemonico.controller.product.model;
 
 import testemonico.domain.entity.Product;
 

@@ -3,7 +3,8 @@ package testemonico.spring.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import testemonico.config.SpringConfig;
-import testemonico.controller.ProductController;
+import testemonico.controller.customer.CustomerController;
+import testemonico.controller.product.ProductController;
 
 @Configuration
 public class Config {

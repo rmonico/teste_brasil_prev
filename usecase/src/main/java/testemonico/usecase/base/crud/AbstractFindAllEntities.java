@@ -4,11 +4,11 @@ import testemonico.usecase.port.BaseRepository;
 
 import java.util.List;
 
-public class AbstractFindAllEntity<E, I, R extends BaseRepository<E, I>> {
+public class AbstractFindAllEntities<E, I, R extends BaseRepository<E, I>> {
 
     private final R repository;
 
-    public AbstractFindAllEntity(R repository) {
+    public AbstractFindAllEntities(R repository) {
         this.repository = repository;
     }
 

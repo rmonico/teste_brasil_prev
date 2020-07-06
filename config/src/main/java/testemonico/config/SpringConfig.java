@@ -22,8 +22,8 @@ public class SpringConfig {
         return new DeleteProduct(productRepository);
     }
 
-    public FindAllProduct findAllProducts() {
-        return new FindAllProduct(productRepository);
+    public FindAllProducts findAllProducts() {
+        return new FindAllProducts(productRepository);
     }
 
     public FindProductById findProductById() {
