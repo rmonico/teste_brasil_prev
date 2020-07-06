@@ -8,7 +8,9 @@ public abstract class AbstractInMemoryRepository<E extends Entity<I>, I> {
     private final Map<I, E> database = new HashMap<>();
 
     public E create(E entity) {
-        return database.put(entity.getId(), entity);
+        database.put(entity.getId(), entity);
+
+        return entity;
     }
 
     public E update(E entity) {
