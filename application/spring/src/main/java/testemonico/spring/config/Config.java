@@ -22,4 +22,15 @@ public class Config {
                 .build();
     }
 
+    @Bean
+    public CustomerController customerController() {
+        return CustomerController.builder()
+                .createCustomer(config.createCustomer())
+                .updateCustomer(config.updateCustomer())
+                .deleteCustomer(config.deleteCustomer())
+                .findAllCustomers(config.findAllCustomers())
+                .findCustomerById(config.findCustomerById())
+                .build();
+    }
+
 }
