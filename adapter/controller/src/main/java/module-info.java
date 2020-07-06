@@ -9,4 +9,5 @@ module testemonico.controller {
     exports testemonico.controller.order;
     exports testemonico.controller;
     exports testemonico.controller.customer.model;
+    exports testemonico.controller.order.model;
 }
