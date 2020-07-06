@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Builder(toBuilder = true, builderMethodName = "")
+@Builder(toBuilder = true)
 public class OrderItem extends Entity<String> {
 
     private String id;

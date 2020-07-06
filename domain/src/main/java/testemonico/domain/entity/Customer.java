@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Builder(toBuilder = true, builderMethodName = "")
+@Builder(toBuilder = true)
 public class Customer extends Entity<String> {
 
     private String id;

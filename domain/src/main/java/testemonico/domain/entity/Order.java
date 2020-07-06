@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Builder(toBuilder = true, builderMethodName = "")
+@Builder(toBuilder = true)
 public class Order extends Entity<String> {
 
     private String id;
