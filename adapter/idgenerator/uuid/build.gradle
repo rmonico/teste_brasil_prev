@@ -4,6 +4,7 @@ ext.moduleName = 'testemonico.idgenerator.uuid'
 
 dependencies {
     implementation(
+        project(':domain'),
         project(':usecase')
     )
 }

@@ -15,8 +15,9 @@ ext.moduleName = 'testemonico.application.spring'
 
 dependencies {
     implementation(
-        project(':config'),
+        project(':domain'),
         project(':usecase'),
+        project(':config'),
         project(':controller'),
         'org.springframework.boot:spring-boot-starter-web',
         'com.fasterxml.jackson.core:jackson-core:2.9.5',

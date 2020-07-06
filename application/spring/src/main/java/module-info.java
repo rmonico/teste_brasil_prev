@@ -1,4 +1,5 @@
 module testemonico.application.spring {
+    requires testemonico.domain;
     requires testemonico.usecase;
     requires testemonico.controller;
     requires testemonico.config;
