@@ -6,29 +6,22 @@
 Entregar todos os endpoints com Clean Archicteture
 
 - [x] CreateProduct
-- [ ] UpdateProduct
-- [ ] DeleteProduct
-- [ ] FindProductById
-- [ ] FindAllProducts
+- [x] UpdateProduct
+- [x] DeleteProduct
+- [x] FindProductById
+- [x] FindAllProducts
 
-- [ ] CreateCustomer
-- [ ] UpdateCustomer
-- [ ] DeleteCustomer
-- [ ] FindCustomerById
-- [ ] FindAllCustomers
+- [x] CreateCustomer
+- [x] UpdateCustomer
+- [x] DeleteCustomer
+- [x] FindCustomerById
+- [x] FindAllCustomers
 
-- [ ] CreateOrder
-- [ ] UpdateOrder
-- [ ] DeleteOrder
-- [ ] FindOrderById
-- [ ] FindAllOrders
-
-- [ ] CreateOrderItem
-- [ ] UpdateOrderItem
-- [ ] DeleteOrderItem
-- [ ] FindOrderItemById
-- [ ] FindAllOrderItems
-
+- [x] CreateOrder
+- [x] UpdateOrder
+- [x] DeleteOrder
+- [x] FindOrderById
+- [x] FindAllOrders
 
 - [x] ProductRepository
 - [x] CustomerRepository
